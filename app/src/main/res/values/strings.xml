@@ -5,4 +5,9 @@
     <string name="student">Student</string>
     <string name="teacher">Teacher</string>
     <string name="submit">Submit</string>
+    <string name="not_registered">Not Registered</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_role_selected">No Role Selected</string>
+    <string name="registered_data">Registered Data</string>
 </resources>
