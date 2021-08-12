@@ -10,4 +10,6 @@
     <string name="no">No</string>
     <string name="no_role_selected">No Role Selected</string>
     <string name="registered_data">Registered Data</string>
+    <string name="submit_and_rate">Submit and Rate</string>
+    <string name="rating">Rating</string>
 </resources>

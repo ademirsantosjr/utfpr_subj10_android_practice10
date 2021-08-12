@@ -2,6 +2,7 @@ package br.edu.utfpr.activitycallandresultreturn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -14,6 +15,10 @@ public class ShowData extends AppCompatActivity {
     public static final String NAME = "NAME";
     public static final String HAS_A_CAR = "HAS_A_CAR";
     public static final String ROLE = "ROLE";
+    public static final String MODE = "MODE";
+    public static final String RATING = "RATE";
+
+    private int mode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +52,28 @@ public class ShowData extends AppCompatActivity {
             }
 
             TextView textViewData = findViewById(R.id.textViewData);
-
             textViewData.setText(output);
+
+            mode = bundle.getInt(MODE, 0);
         }
 
+    }
+
+    private void terminate() {
+        if (mode == MainActivity.ASK_RATING) {
+            Intent intent = new Intent();
+
+            intent.putExtra(RATING, 1000);
+
+            setResult(Activity.RESULT_OK, intent);
+        }
+
+        finish();
+    }
+
+    @Override
+    public void onBackPressed() {
+        terminate();
     }
 
 }
