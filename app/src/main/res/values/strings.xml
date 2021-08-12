@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ActivityCallAndResultReturn</string>
+    <string name="name">Name</string>
+    <string name="has_a_car">Has a Car</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="submit">Submit</string>
 </resources>
